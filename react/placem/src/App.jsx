@@ -11,6 +11,8 @@ import Blog from './component/Blog.jsx'
 import Login from './component/Login.jsx'
 import About from './component/About.jsx'
 import UseEffect from './component/UseEffect.jsx'
+import UseRef from './component/UseRef.jsx'
+import UseMemo from './UseMemo.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
@@ -25,11 +27,10 @@ function App() {
       <Route path="/Blog" element={<Blog/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/UseEffect" element={<UseEffect/>}/>
+      <Route path="/UseRef" element={<UseRef/>}/>
+      <Route path="/UseMemo" element={<UseMemo/>}/>
       </Routes>
       </BrowserRouter>
-
-
-    
   )
 }
 
